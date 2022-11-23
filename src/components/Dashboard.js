@@ -39,6 +39,21 @@ const PanelTitle = styled.h2`
     margin-bottom: 20px;
 `
 
+const AddButton = styled.button`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #53AB9A;
+    background: #E9F1F0;
+    padding: 10px 0px;
+    cursor: pointer;
+    border: none;
+    user-select: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 20px;
+`
+
 const initialTodos = {
     todo: [
         {
@@ -72,18 +87,21 @@ const RenderedDashboard = () => {
             <Panels>
                 <Panel>
                     <PanelTitle>To do</PanelTitle>
+                    <AddButton>+</AddButton>
                     {
                         todos.todo.map(item => <TodoCard title={item.title} content={item.content} />)
                     }
                 </Panel>
                 <Panel>
                     <PanelTitle>in Progress</PanelTitle>
+                    <AddButton>+</AddButton>
                     {
                         todos.inProgress.map(item => <TodoCard title={item.title} content={item.content} />)
                     }
                 </Panel>
                 <Panel>
                     <PanelTitle>completed</PanelTitle>
+                    <AddButton>+</AddButton>
                     {
                         todos.completed.map(item => <TodoCard title={item.title} content={item.content} />)
                     }
