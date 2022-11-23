@@ -37,7 +37,7 @@ const PanelTitle = styled.h2`
     color: #181818;
 `
 
-export default () => {
+const RenderedDashboard = () => {
     return (
         <Dashboard>
             <Title>Project</Title>
@@ -56,35 +56,4 @@ export default () => {
     )
 }
 
-    // const panelData = {
-    //     todo: [
-    //         {
-    //             title: 'Design',
-    //             content: 'Design Content'
-    //         }
-    //     ],
-    //     inProgress: [
-    //         {
-    //             title: 'Development',
-    //             content: 'Development Content'
-    //         }
-    //     ],
-    //     completed: [
-    //         {
-    //             title: 'Finish!',
-    //             content: 'Finish Content'
-    //         }
-    //     ]
-    // }
-
-//     return (
-//         <div className="main">
-//             <h1>Projects</h1>
-//             <Panel></Panel>
-//             <Panel></Panel>
-//             <Panel></Panel>
-//         </div>
-//     )
-// }
-
-// export default Dashboard;
+export default RenderedDashboard;

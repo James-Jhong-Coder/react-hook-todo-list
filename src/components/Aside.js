@@ -7,8 +7,10 @@ const Aside = styled.aside`
     border-bottom-left-radius: 15px;
 `
 
-export default () => {
+const RenderedAside = () => {
     return (
         <Aside>aside</Aside>
     )
 }
+
+export default RenderedAside;

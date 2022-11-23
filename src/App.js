@@ -17,7 +17,8 @@ const Divider = styled.span`
   width: 1px;
   background: #dfdbdb;
 `
-export default () => {
+
+const App = () => {
   return (
     <Main>
       <Aside />
@@ -26,3 +27,5 @@ export default () => {
     </Main>
   )
 }
+
+export default App;
