@@ -89,21 +89,21 @@ const RenderedDashboard = () => {
                     <PanelTitle>To do</PanelTitle>
                     <AddButton>+</AddButton>
                     {
-                        todos.todo.map(item => <TodoCard title={item.title} content={item.content} />)
+                        todos.todo.map((item, index) => <TodoCard key={index} title={item.title} content={item.content} />)
                     }
                 </Panel>
                 <Panel>
                     <PanelTitle>in Progress</PanelTitle>
                     <AddButton>+</AddButton>
                     {
-                        todos.inProgress.map(item => <TodoCard title={item.title} content={item.content} />)
+                        todos.inProgress.map((item, index) => <TodoCard key={index} title={item.title} content={item.content} />)
                     }
                 </Panel>
                 <Panel>
                     <PanelTitle>completed</PanelTitle>
                     <AddButton>+</AddButton>
                     {
-                        todos.completed.map(item => <TodoCard title={item.title} content={item.content} />)
+                        todos.completed.map((item, index) => <TodoCard key={index} title={item.title} content={item.content} />)
                     }
                 </Panel>
             </Panels>
