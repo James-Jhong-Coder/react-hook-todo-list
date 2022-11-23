@@ -9,3 +9,5 @@
 5. 新增卡片
 6. 支援 firebase 將資料存入
 7. 登入驗證
+8. 支援 styled component
+9. 支援單元測試

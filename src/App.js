@@ -1,25 +1,28 @@
-import logo from './logo.svg';
+import styled from 'styled-components';
+import Aside from './components/Aside'
+import Dashboard from './components/Dashboard'
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const Main = styled.main`
+  background: #FEFEFE;
+  width: 80%;
+  height: 80%;
+  border-radius: 15px;
+  box-shadow: 0px 0px 5px #bdb2b2;
+  display: flex;
+`
 
-export default App;
+const Divider = styled.span`
+  height: 100%;
+  width: 1px;
+  background: #dfdbdb;
+`
+export default () => {
+  return (
+    <Main>
+      <Aside />
+      <Divider />
+      <Dashboard />
+    </Main>
+  )
+}
